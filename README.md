@@ -1,20 +1,19 @@
 # GLM-4.5-Flash 图片转Word智能体（学生版）
 基于智谱GLM-4.5-Flash大模型驱动的图片转Word智能体，全程免费，适配学生学习/日常使用场景。
 
-## ✨ 核心功能
+# ✨ 核心功能
 - 🧠 大模型自主判断用户意图，自动调用OCR工具处理图片
 - 📝 识别图片中的文字/表格，生成**宋体**格式的Word文档
 - 🌐 本地FastAPI可视化接口，无需写代码，浏览器直接操作
 - 🆓 全程免费（GLM-4.5-Flash无付费项，EasyOCR开源免费）
 
-## 📋 环境准备（学生零基础友好）
-### 1. 创建Python虚拟环境（推荐Anaconda）
-```bash
+# 📋 环境准备（学生零基础友好）
+创建Python虚拟环境（推荐Anaconda）
 创建虚拟环境（Python3.9兼容性最佳）
 conda create -n ocr_word_env python=3.9
 激活虚拟环境
 conda activate ocr_word_env
-2. 安装依赖包
+安装依赖包
 bash
 运行
 一键安装所有依赖（清华源提速）
@@ -27,18 +26,18 @@ pip install fastapi uvicorn python-multipart easyocr python-docx openai python-d
 2. 创建环境配置文件
 在项目根目录新建.env文件，填入以下内容（替换为自己的路径 / API Key）：
 env
-# 智谱GLM-4.5-Flash API Key
+智谱GLM-4.5-Flash API Key
 GLM_API_KEY="你的智谱API Key"
-# EasyOCR模型存储路径
+EasyOCR模型存储路径
 EASYOCR_MODEL_PATH="D:\EasyOCR_Models"
-# 图片上传目录
+图片上传目录
 UPLOAD_DIR="D:\pythonProject\pythonProject\ImageToWordGitHub\uploads"
-# Word输出目录
+Word输出目录
 OUTPUT_DIR="D:\pythonProject\pythonProject\ImageToWordGitHub\outputs"
 # 🚀 启动智能体
 bash
 运行
-# 运行核心代码
+运行核心代码
 python llm_ocr_agent.py
 启动成功后，浏览器访问：http://127.0.0.1:8000/docs
 # 📖 使用教程（傻瓜式操作）
