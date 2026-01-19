@@ -1,0 +1,20 @@
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# 环境变量文件（敏感！）
+.env
+# 临时文件（图片/Word）
+uploads/
+outputs/
+# EasyOCR模型（体积大）
+D:\EasyOCR_Models/
+# IDE配置
+.idea/
+.vscode/
+# Windows系统文件
+Thumbs.db
+.DS_Store
+# 日志文件
+*.log
