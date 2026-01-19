@@ -1,5 +1,3 @@
-最终版 README.md（学生友好版）
-markdown
 # GLM-4.5-Flash 图片转Word智能体（学生版）
 基于智谱GLM-4.5-Flash大模型驱动的图片转Word智能体，全程免费，适配学生学习/日常使用场景。
 
